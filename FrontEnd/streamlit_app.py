@@ -42,7 +42,7 @@ def main() -> None:
     st.download_button(
         label="Download",
         data=csv,
-        file_name='my_data.csv',
+        file_name='timeseries_itemid_13190.csv',
         mime='text/csv'
     )
     recent = fetch_recent(df)
