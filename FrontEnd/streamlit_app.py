@@ -18,7 +18,7 @@ def pinging_database():
         , password = st.secrets['SQL_PASSWORD']
     )
     schema = st.secrets['SQL_SCHEMA']
-    source = 'de10_rl_test348329' #st.secrets['DATA_SOURCE']
+    source = st.secrets['DATA_SOURCE']
     cur = conn.cursor()
     cur.execute(f'SELECT * FROM {schema}.{source};')
     data = cur.fetchall()
