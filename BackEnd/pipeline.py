@@ -5,7 +5,6 @@ from dotenv import load_dotenv # type: ignore
 import psycopg2 as psql # type: ignore
 import warnings
 import requests
-import time
 import numpy as np
 
 
